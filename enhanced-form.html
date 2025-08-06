@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+</head>
+<body>
+
+    <!-- 1. Create a Well-structured content using lists, tables, and media -->
+
+    <!-- List of Features -->
+    <h2> List of Features</h2>
+    <ul>
+        <li>Responsive design</li>
+        <li>Cross-browser compatibility</li>
+        <li>Easy form validation</li>
+        <li>Customizable styles</li>
+    </ul>
+
+    <!-- Table of Data -->
+    <h2>Data Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gloria Ngwu</td>
+                <td>
+                    <a href="mailto:gloriangwu45@example.com">gloriangwu45@example.com</a>
+                </td>
+                <td>24</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Media Content -->
+    <h2>Media</h2>
+    <p>Check out this image:</p>
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    <p>And this video:</p>
+    <video width="320" height="240" controls autoplay muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio controls muted autoplay>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <p>Enjoy the audio clip!</p>
+
+
+
+    <!-- 2. A complete HTML5 form including a variety of input fields. -->
+
+    <h2>Form Example</h2>
+    <form action="/submit" method="post">   
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="bio">Biography:</label>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p>Thank you for filling out the form!</p>
+
+
+
+    <!-- 3. Correct use of form attributes such as placeholder, required, autocomplete, and readonly -->
+
+    <h2>Form with Attributes</h2>
+    <form action="/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required autocomplete="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="current-password"><br><br>
+
+        <label for="readonlyField">Readonly Field:</label>
+        <input type="text" id="readonlyField" name="readonlyField" value="This is readonly" readonly><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p>Make sure to fill in all required fields!</p>
+
+
+
+    <!-- 4. HTML5 validation features implemented correctly across all relevant fields. -->
+
+    <h2>Form with Validation</h2>
+    <form action="/submit" method="post">
+        <label for="emailValidation">Email:</label>
+        <input type="email" id="emailValidation" name="emailValidation" required placeholder="Enter a valid email"><br><br>
+
+        <label for="urlValidation">Website:</label>
+        <input type="url" id="urlValidation" name="urlValidation" required placeholder="Enter a valid URL"><br><br>
+
+        <label for="numberValidation">Age:</label>
+        <input type="number" id="numberValidation" name="numberValidation" min="1" max="120" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p>Ensure all fields are filled out correctly!</p>
+
+
+
+    <!-- 5. A clear, accessible layout using semantic tags. -->
+    <h2>Accessible Layout</h2>
+    <section>
+        <h3>Introduction</h3>
+        <p>This section provides an overview of the form and its purpose.</p>
+        <h3>Instructions</h3>
+        <p>Please fill out the form below with accurate information. All fields marked with an asterisk (*) are required.</p>
+        <h3>Contact Information</h3>        
+        <form action="/contact" method="post">
+            <label for="contactName">Name:</label>
+            <input type="text" id="contactName" name="contactName" required><br><br>
+
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail" required><br><br>
+
+            <label for="contactMessage">Message:</label>
+            <textarea id="contactMessage" name="contactMessage" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+
+    </section>
+        <p>Thank you for your feedback!</p>
+
+</body>
+</html>
